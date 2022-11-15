@@ -136,7 +136,7 @@ body {
     grid-column: 2 / 5;
     background-color: #f3f4f6;
     display: grid;
-    grid-template: 1fr 1fr / 2fr 1fr;
+    grid-template: 1fr 1fr / 2.5fr 1fr;
     padding: 2rem 1.5rem;
     gap: 20px;
 }
@@ -166,7 +166,6 @@ body {
 
 .card-text p {
     color: #6b7280;
-    font-weight: 300;
     font-size: 0.9rem;
 }
 
@@ -235,7 +234,7 @@ body {
 .trend-profile {
     display: flex;
     align-items: center;
-    gap: 1.5rem;
+    gap: 1.2rem;
 }
 
 .desc {
