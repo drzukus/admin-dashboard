@@ -135,9 +135,14 @@ body {
 .main-content {
     grid-column: 2 / 5;
     background-color: #f3f4f6;
-    display: flex;
+    display: grid;
+    grid-template: 1fr 1fr / 2fr 1fr;
     padding: 2rem 1.5rem;
     gap: 20px;
+}
+
+.projects {
+    grid-area: 1 / 1 / 3 / 2;
 }
 
 .project-cards {
@@ -151,6 +156,8 @@ body {
     background-color: white;
     padding: 1.5rem;
     border-radius: 10px;
+    position: relative;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.2);
 }
 
 .color-block {
@@ -160,7 +167,7 @@ body {
 .card-text p {
     color: #6b7280;
     font-weight: 300;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
 }
 
 .card-text p {
@@ -173,4 +180,65 @@ body {
     justify-content: right;
     align-items: center;
     gap: 1rem;
+}
+
+.color-block {
+    position: absolute;
+    margin-left: -1.5rem;
+    margin-top: -1.5rem;
+    border-radius: 10px 0 0 10px;
+    width: 5px;
+    height: 100%;
+    background-color: #eab308;
+}
+
+.announ-content {
+    background-color: white;
+    margin-top: 0.8rem;
+    border-radius: 10px;
+    display: grid;
+    padding: 2rem;
+    gap: 1rem;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.2);
+}
+
+.announ p {
+    font-size: 0.8rem;
+    color: #6b7280;
+    margin-top: 5px;
+}
+
+.announ {
+    border-bottom: 1px solid #6b7280;
+    padding-bottom: 1rem;
+}
+
+.announ:last-child {
+    border: none;
+    padding-bottom: 0;
+}
+
+.trending {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.trending-content {
+    display: grid;
+    margin-top: 0.8rem;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.2);
+    padding: 2rem;
+    gap: 1rem;
+}
+
+.trend-profile {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.desc {
+    margin-top: 3px;
+    color: #6b7280;
 }
